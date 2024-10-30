@@ -9,7 +9,7 @@
 
 ## Data Scraping
 
-The data was scraped using the GitHub API. First, users located in Boston with more than 100 followers were identified using the Search API (`/search/users`). Then, for each user, their profile information was obtained (`/users/{username}`), and information about their first 500 public repositories was retrieved (`/users/{username}/repos`). The collected data was saved into two CSV files: `users.csv` (for user profiles) and `repositories.csv` (for repositories).
+The data was scraped using the GitHub API. First, users located in Boston with more than 100 followers were identified using the Search API (`/search/users`). Then, for each user, their profile information was obtained , and information about their first 500 public repositories was retrieved (`/users/{username}/repos`). The collected data was saved into two CSV files: `users.csv` (for user profiles) and `repositories.csv` (for repositories).
 
 
 
@@ -29,6 +29,9 @@ The data was scraped using the GitHub API. First, users located in Boston with m
 * stargazers_count has 26506 (62.4%) zeros <br>
 * watchers_count has 26506 (62.4%) zeros <br>
 
+![image](https://github.com/user-attachments/assets/887361a3-6710-4522-a1a4-b5a197c76b6b)
+
+
 ### Users
 
 * company has 165 (35.2%) missing values	 <br>
@@ -38,6 +41,11 @@ The data was scraped using the GitHub API. First, users located in Boston with m
 * created_at has unique values	 <br>
 * following has 87 (18.6%)  <br>
 
+![image](https://github.com/user-attachments/assets/8fcd807d-a203-491f-ae6d-5b443fa631e8)
+
+
 ## Actionable Recommendation
 
 The analysis showed a positive correlation between a developer's number of followers and the length of their bio in the GitHub profile. Therefore, a recommended action for developers aiming to increase their visibility and network within the Boston developer community is to create a well-written and informative bio. A detailed bio offers valuable insights into a developer's skills and interests, thereby attracting more followers and potential collaborators.
+
+
