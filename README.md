@@ -15,9 +15,28 @@ The data was scraped using the GitHub API. First, users located in Boston with m
 
 ## Most Interesting Fact
 
-While there were various findings, the observation that language preference is not strongly related to when a user joined GitHub was surprising. Intuitively, one might expect newer developers to gravitate toward more recently popular languages. However, the analysis revealed a diverse language landscape among users of different registration years. This suggests that individual choices and project needs strongly influence language adoption.
+### Repositories
 
+> stargazers_count is highly overall correlated with watchers_count	High correlation
+> watchers_count is highly overall correlated with stargazers_count	High correlation
+> has_projects is highly imbalanced (85.1%)	Imbalance
+> license_name is highly imbalanced (50.7%)
+> language has 10198 (24.0%) missing values	Missing
+> license_name has 20173 (47.5%) missing values	Missing
+> stargazers_count is highly skewed (γ1 = 55.6457688)	Skewed
+> watchers_count is highly skewed (γ1 = 55.6457688)	Skewed
+> full_name has unique values	Unique
+> stargazers_count has 26506 (62.4%) zeros	Zeros
+> watchers_count has 26506 (62.4%) zeros
 
+### Users
+
+> company has 165 (35.2%) missing values	Missing
+> email has 233 (49.7%) missing values	Missing
+> bio has 154 (32.8%) missing values	Missing
+> login has unique values	Unique
+> created_at has unique values	Unique
+> following has 87 (18.6%) zeros
 
 ## Actionable Recommendation
 
